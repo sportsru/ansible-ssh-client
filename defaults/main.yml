@@ -1,11 +1,11 @@
-# defaults file
+# defaults file for ssh-client
 ---
 ssh_client_install: []
 
 ssh_client_default_configuration:
   - dest: /etc/ssh/ssh_config
     owner: root
-    ansible.builtin.group: root
+    group: root
     hosts:
       - pattern: ['*']
         send_env: LANG LC_*

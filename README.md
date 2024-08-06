@@ -1,7 +1,6 @@
 ## ssh-client
 
-[![CI](https://github.com/Oefenweb/ansible-ssh-client/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-ssh-client/actions?query=workflow%3ACI)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-ssh--client-blue.svg)](https://galaxy.ansible.com/Oefenweb/ssh_client)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-ssh-client.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-ssh-client) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-ssh--client-blue.svg)](https://galaxy.ansible.com/Oefenweb/ssh-client)
 
 Set up an OpenSSH client in Debian-like systems.
 
@@ -70,7 +69,7 @@ None
 ---
 - hosts: all
   roles:
-    - oefenweb.ssh-client
+    - ssh-client
   vars:
     ssh_client_custom_configurations:
       - dest: '~cacti/.ssh/config'
